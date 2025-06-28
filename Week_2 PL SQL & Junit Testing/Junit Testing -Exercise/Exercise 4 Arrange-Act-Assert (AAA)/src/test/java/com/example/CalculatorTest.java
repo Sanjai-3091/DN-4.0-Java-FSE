@@ -10,14 +10,13 @@ public class CalculatorTest {
 
     private Calculator calc;
 
-    // 🔧 Setup method – runs BEFORE each test
+  
     @BeforeEach
     void setUp() {
         System.out.println("Setting up...");
         calc = new Calculator();
     }
 
-    // 🧹 Teardown method – runs AFTER each test
     @AfterEach
     void tearDown() {
         System.out.println("Cleaning up...");
@@ -26,9 +25,9 @@ public class CalculatorTest {
 
     @Test
     void testAddition() {
-        // Act
+    
         int result = calc.add(10, 5);
-        // Assert
+  
         assertEquals(15, result);
     }
 
